@@ -1,0 +1,206 @@
+body{
+    margin: 0;
+    width: 100%;
+    font-family: 'Source Serif Pro', serif;
+    overflow-x: hidden;
+    font-size: 17px;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    display: inline;
+}
+a {
+    text-decoration: none;
+}
+.App {
+  text-align: center;
+  height: 100vh;
+  overflow: auto;
+}
+.AppHeader {
+  height: 300px;
+  padding: 20px;
+  background-image: url("img/header.png");
+  color:#ffffff;
+}
+
+.topMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 30px;
+  background-color: rgba(94,94,94,0.5);
+  width:100%;
+  z-index: 2;
+    box-sizing: border-box;
+}
+.navMenu li>a {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+}
+.navMenu button {
+    margin: 0 16px;
+    background: #FFB53A;
+    mix-blend-mode: hard-light;
+    border-radius: 5px;
+    border: 2px solid #FFB53A;
+    color:#ffffff;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.search {
+    background: #FFFFFF;
+    border: 1px solid rgba(38, 38, 38, 0.1);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.search form {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+.search input{
+    background-color: white;
+    border: none;
+    padding: 10px 10px 10px 15px;
+    color: black;
+}
+.search svg {
+    cursor: pointer;
+ }
+
+.user{
+    display: flex;
+    align-items: center;
+}
+.user p{
+    margin: 0;
+}
+
+.pageTitle {
+    padding-top: 100px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.dishList {
+  position: relative;
+  margin: 20px;
+}
+.dishListHeader div:before {
+  content: '';
+  color:#FFB53A;
+  background: #FFB53A;
+  padding-bottom: 50px;
+    padding-right: 9px;
+  position: relative;
+  top: 15px;
+  left: -15px;
+}
+.dishListHeader {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dishListHeader h2 {
+    font-size: 30px;
+    margin: 0;
+}
+.dishListHeader p {
+    font-size: 20px;
+    margin: 5px 0;
+}
+.dishListHeader button, .addDishForm button, .addDishForm .submit{
+    color: #FFFFFF;
+    padding: 12px 30px;
+    background: #FFB53A;
+    border-radius: 5px;
+    border: 2px solid #FFB53A;
+    cursor: pointer;
+}
+
+.addDish {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    z-index: 10;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 30px 50px;
+}
+.addDish .close {
+    float: right;
+    background-color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+.addDishForm{
+    text-align: left;
+}
+.addDishForm span{
+    font-weight: bolder;
+    margin: 5px;
+}
+.addDishForm input{
+    display: block;
+    padding: 10px;
+    width: 85%;
+    margin: 0;
+}
+.addDishForm .ingredients{
+    background-color: #EFEFEF;
+    width: 116%;
+    padding: 20px;
+    margin-left: -50px;
+}
+.addDishForm button{
+    margin: 10px 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+.addDishForm .submit{
+    margin-top: 10px;
+}
+
+.List{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Dish{
+    width: 320px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.Dish img{
+    height: 180px;
+    border-radius: 10px;
+}
+.Dish h2{
+    font-weight: bold;
+    font-size: 17px;
+}
+.Dish li {
+    display: block;
+    font-size: 14px;
+    text-align: left;
+}
+.Dish li>span{
+    padding-left: 30px;
+}
+.Dish p{
+    font-weight: bold;
+    text-align: right;
+    padding-right: 50px;
+}
