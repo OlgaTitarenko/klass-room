@@ -1,16 +1,17 @@
 {
   "files": {
     "main.css": "/klass-room/static/css/main.08f7d6f3.chunk.css",
-    "main.js": "/klass-room/static/js/main.edcb4ad3.chunk.js",
-    "main.js.map": "/klass-room/static/js/main.edcb4ad3.chunk.js.map",
+    "main.js": "/klass-room/static/js/main.f6e75807.chunk.js",
+    "main.js.map": "/klass-room/static/js/main.f6e75807.chunk.js.map",
     "runtime-main.js": "/klass-room/static/js/runtime-main.04e7a6b3.js",
     "runtime-main.js.map": "/klass-room/static/js/runtime-main.04e7a6b3.js.map",
-    "static/js/2.fb8dd7cd.chunk.js": "/klass-room/static/js/2.fb8dd7cd.chunk.js",
-    "static/js/2.fb8dd7cd.chunk.js.map": "/klass-room/static/js/2.fb8dd7cd.chunk.js.map",
+    "static/js/2.8122bc43.chunk.js": "/klass-room/static/js/2.8122bc43.chunk.js",
+    "static/js/2.8122bc43.chunk.js.map": "/klass-room/static/js/2.8122bc43.chunk.js.map",
     "index.html": "/klass-room/index.html",
-    "precache-manifest.65d07c9810ba14ff8c44aa276ba23f31.js": "/klass-room/precache-manifest.65d07c9810ba14ff8c44aa276ba23f31.js",
+    "precache-manifest.84cfb6ce069ace638ad0b5a7e0f3e69c.js": "/klass-room/precache-manifest.84cfb6ce069ace638ad0b5a7e0f3e69c.js",
     "service-worker.js": "/klass-room/service-worker.js",
     "static/css/main.08f7d6f3.chunk.css.map": "/klass-room/static/css/main.08f7d6f3.chunk.css.map",
-    "static/media/App.css": "/klass-room/static/media/header.66e0d3ae.png"
+    "static/media/App.css": "/klass-room/static/media/header.66e0d3ae.png",
+    "static/media/meat.jpg": "/klass-room/static/media/meat.8bdd6899.jpg"
   }
 }
