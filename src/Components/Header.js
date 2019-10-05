@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Logo from '../img/dish-logo--320.png';
  export default class Header extends React.Component {
    state = {
      search:''
@@ -18,7 +18,7 @@ import React from 'react';
        <header className="AppHeader">
          <div className="topMenu">
            <div className="logo">
-             <img src="/img/dish-logo--320.png" alt="Lish logo"/>
+             <img src={Logo} alt="Lish logo"/>
            </div>
            <nav className="navMenu">
              <ul>
