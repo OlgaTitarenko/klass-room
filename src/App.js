@@ -68,13 +68,53 @@ class App extends React.Component{
         ],
         totalWeigth: 300,
         isVisible: true
+      },
+      {
+        nameDish: 'Second name',
+        listIndgredients: [
+          {
+            name: 'Ingred1',
+            grams: 100
+          },
+          {
+            name: 'Ingred2',
+            grams: 100
+          },
+          {
+            name: 'Ingred3',
+            grams: 100
+          }
+        ],
+        totalWeigth: 300,
+        isVisible: true
+      },
+      {
+        nameDish: 'Third name',
+        listIndgredients: [
+          {
+            name: 'Ingred1',
+            grams: 100
+          },
+          {
+            name: 'Ingred2',
+            grams: 100
+          },
+          {
+            name: 'sugar',
+            grams: 100
+          }
+        ],
+        totalWeigth: 300,
+        isVisible: true
       }
     ]
   };
 
   componentDidMount() {
     // Detect when scrolled to bottom.
+    console.log(this.refs.myscroll.scrollTop + this.refs.myscroll.clientHeight, this.refs.myscroll.scrollHeight-100);
     this.refs.myscroll.addEventListener("scroll", () => {
+
       if (
         this.refs.myscroll.scrollTop + this.refs.myscroll.clientHeight >=
         this.refs.myscroll.scrollHeight
