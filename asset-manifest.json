@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/klass-room/static/css/main.5cb64114.chunk.css",
+    "main.css": "/klass-room/static/css/main.5bf5de7d.chunk.css",
     "main.js": "/klass-room/static/js/main.f3865f2a.chunk.js",
     "main.js.map": "/klass-room/static/js/main.f3865f2a.chunk.js.map",
     "runtime-main.js": "/klass-room/static/js/runtime-main.04e7a6b3.js",
@@ -8,9 +8,9 @@
     "static/js/2.8122bc43.chunk.js": "/klass-room/static/js/2.8122bc43.chunk.js",
     "static/js/2.8122bc43.chunk.js.map": "/klass-room/static/js/2.8122bc43.chunk.js.map",
     "index.html": "/klass-room/index.html",
-    "precache-manifest.ef68760e217534dbd07ade667f2588ce.js": "/klass-room/precache-manifest.ef68760e217534dbd07ade667f2588ce.js",
+    "precache-manifest.848fc6161921f98f347f868adae89613.js": "/klass-room/precache-manifest.848fc6161921f98f347f868adae89613.js",
     "service-worker.js": "/klass-room/service-worker.js",
-    "static/css/main.5cb64114.chunk.css.map": "/klass-room/static/css/main.5cb64114.chunk.css.map",
+    "static/css/main.5bf5de7d.chunk.css.map": "/klass-room/static/css/main.5bf5de7d.chunk.css.map",
     "static/media/App.css": "/klass-room/static/media/header.66e0d3ae.png",
     "static/media/meat.jpg": "/klass-room/static/media/meat.8bdd6899.jpg"
   }
