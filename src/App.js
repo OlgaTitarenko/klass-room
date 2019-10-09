@@ -1,5 +1,6 @@
 import React from 'react';
 
+import ListDishes from "./Data/List";
 import DishItem from "./Components/DishItem";
 import Modal from "./Components/Modal";
 import Header from "./Components/Header"
@@ -11,110 +12,14 @@ class App extends React.Component{
     showModal: false,
     repeat: 1,
     loading: false,
-    listDishes: [
-      {
-        nameDish: 'First name',
-        listIndgredients: [
-          {
-            name: 'sugar',
-            grams: 100
-          },
-          {
-            name: 'water',
-            grams: 100
-          },
-          {
-            name: 'milk',
-            grams: 100
-          }
-        ],
-        totalWeigth: 300,
-        isVisible: true
-      },
-      {
-        nameDish: 'Second name',
-        listIndgredients: [
-          {
-            name: 'Ingred1',
-            grams: 100
-          },
-          {
-            name: 'Ingred2',
-            grams: 100
-          },
-          {
-            name: 'Ingred3',
-            grams: 100
-          }
-        ],
-        totalWeigth: 300,
-        isVisible: true
-      },
-      {
-        nameDish: 'Third name',
-        listIndgredients: [
-          {
-            name: 'Ingred1',
-            grams: 100
-          },
-          {
-            name: 'Ingred2',
-            grams: 100
-          },
-          {
-            name: 'sugar',
-            grams: 100
-          }
-        ],
-        totalWeigth: 300,
-        isVisible: true
-      },
-      {
-        nameDish: 'Second name',
-        listIndgredients: [
-          {
-            name: 'Ingred1',
-            grams: 100
-          },
-          {
-            name: 'Ingred2',
-            grams: 100
-          },
-          {
-            name: 'Ingred3',
-            grams: 100
-          }
-        ],
-        totalWeigth: 300,
-        isVisible: true
-      },
-      {
-        nameDish: 'Third name',
-        listIndgredients: [
-          {
-            name: 'Ingred1',
-            grams: 100
-          },
-          {
-            name: 'Ingred2',
-            grams: 100
-          },
-          {
-            name: 'sugar',
-            grams: 100
-          }
-        ],
-        totalWeigth: 300,
-        isVisible: true
-      }
-    ]
+    listDishes:[]
   };
 
   componentDidMount() {
-    // Detect when scrolled to bottom.
-    console.log(this.refs.myscroll.scrollTop + this.refs.myscroll.clientHeight, this.refs.myscroll.scrollHeight-100);
+    this.setState({
+      listDishes: ListDishes
+    });
     this.refs.myscroll.addEventListener("scroll", () => {
-
       if (
         this.refs.myscroll.scrollTop + this.refs.myscroll.clientHeight >=
         this.refs.myscroll.scrollHeight
@@ -130,7 +35,7 @@ class App extends React.Component{
         .filter(dish =>
           dish.nameDish.toLowerCase().includes(search.toLowerCase())
         );
-      const listIngred = prewState.listDishes.map(dish => {
+      const listIngred = prewState.listDishes.map((dish) => {
           if  (dish.listIndgredients.filter(ingreds =>
             ingreds.name.toLowerCase().includes(search.toLowerCase())).length !==0) {
             return dish;
@@ -158,11 +63,9 @@ class App extends React.Component{
   };
 
   addDish = (dish) => {
-    console.log(dish);
     this.setState(prewState => {
       const list = prewState.listDishes;
       list.push(dish);
-      console.log(list);
       return {
         listDishes: list
       }
@@ -194,13 +97,13 @@ class App extends React.Component{
         ref="myscroll"
       >
         <Header onStartSearch={this.searchDish} />
-        <div className="dishList">
+        <div className="dishList container">
           <div className="dishListHeader">
             <div>
               <h2>Meat Dishes</h2>
               <p>Some of the best meat dishes</p>
             </div>
-            <button  onClick={e => {
+            <button className="btn" onClick={e => {
               this.showModal();
             }}
             > + Add new dish </button>
@@ -213,15 +116,11 @@ class App extends React.Component{
           {this.state.loading
             ? <p>loading...</p>
             : ""}
-
         </div>
         <Modal show={this.state.showModal} onClose={this.showModal} onSaveDish={this.addDish}/>
       </div>
     );
   }
-
 }
 
 export default App;
-
-

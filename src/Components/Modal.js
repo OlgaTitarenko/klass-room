@@ -94,11 +94,11 @@ export default class Modal extends React.Component {
                     </div>
                   )
                 )}
-              <button onClick={(event)=>this.addIngred(event)}> Add new </button>
+              <button className="btn" onClick={(event)=>this.addIngred(event)}> Add new </button>
             </label>
           </div>
 
-          <input type="submit" onClick={this.saveDish} value="Add" className="submit"/>
+          <input type="submit" onClick={this.saveDish} value="Add" className="submit btn"/>
         </form>
       </div>
     );
