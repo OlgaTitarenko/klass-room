@@ -19,9 +19,9 @@ a {
 }
 .App {
   text-align: center;
-  height: 870px;
+  height: 100vh;
   overflow: auto;
-    width: 100%;
+  width: 100%;
 }
 .container {
     width: 80%;
